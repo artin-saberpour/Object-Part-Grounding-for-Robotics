@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "object-part-grounding"
+version = "0.1.0"
+description = "Experimental text-guided object-part grounding and multiview geometry"
+requires-python = ">=3.10,<3.13"
+dependencies = ["numpy>=1.24,<3", "Pillow>=10,<12"]
+
+[project.optional-dependencies]
+models = ["torch>=2.2,<3", "torchvision>=0.17,<1", "transformers>=4.45,<4.49"]
+yolo = ["ultralytics>=8.2,<9"]
+
+[project.scripts]
+partground = "partground.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,10 @@
+{
+  "note": "Synthetic geometry example for testing only; not model predictions or evaluation data.",
+  "bounds_min": [0, 0, 0],
+  "bounds_max": [1, 1, 1],
+  "views": [
+    {"box": [20, 30, 50, 60], "image_size": [100, 100], "horizontal_axis": "x", "vertical_axis": "y"},
+    {"box": [40, 10, 70, 40], "image_size": [100, 100], "horizontal_axis": "y", "vertical_axis": "z"},
+    {"box": [15, 20, 35, 50], "image_size": [100, 100], "horizontal_axis": "z", "vertical_axis": "x"}
+  ]
+}
